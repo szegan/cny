@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Holiday Dioama-rama</title>
+    <link rel="stylesheet" href="asset/style.css" />
+</head>
+
+<body>
+    <ul class="strand">
+        <!-- <li> tags create the individual christmas lights. we're going to have 43 -->
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+
+    <audio id="audio1" src="asset/audio/firework1.mp3" autoplay="false"></audio>
+
+    <!--Setting the scene-->
+    <article class="object scene">
+        <!--Card Base-->
+        <div class="card">
+            <img class="face cardwhiteleft" src="asset/images/book-white.png" />
+            <img class="face cardredleft" src="asset/images/book-red.png" />
+            <img class="face cardwhiteright" src="asset/images/book-white.png" />
+            <img class="face cardredright" src="asset/images/book-red.png" />
+        </div>
+
+        <!--Border-->
+        <div class="object border">
+            <img class="face redborder" src="asset/images/border.png" />
+            <!--
+                <img class="face couplet"           src="asset/images/couplet.png"/>-->
+        </div>
+
+        <!--Palace-->
+        <div class="object palace">
+            <img class="face palace" src="asset/images/palace.png" />
+        </div>
+
+        <!--Bonsai Plant-->
+        <div class="object plant">
+            <img class="face plant1" src="asset/images/plant1.png" />
+            <img class="face plant2" src="asset/images/plant2.png" />
+        </div>
+
+        <!--Lion-->
+        <div class="object lion" onclick="playSound2();">
+            <img class="face lionleft" src="asset/images/lionleft.svg" />
+            <img class="face lionright" src="asset/images/lionright.svg" />
+        </div>
+        <audio id="audio" src="asset/audio/roar.mp3" autoplay="false"></audio>
+        <script>
+            function playSound2() {
+                var sound = document.getElementById("audio");
+                sound.play();
+            }
+        </script>
+
+
+        <!--Fire Cracker-->
+        <div class="object firecracker" onclick="playCrackerSound()" ;>
+            <img class="face firecracker" src="asset/images/firecracker.png" />
+            <img class="face star" src="asset/images/star.png" />
+        </div>
+
+        <audio id="audio2" src="asset/audio/firecracker.mp3" autoplay="false"></audio>
+        <script>
+            function playCrackerSound() {
+                var sound = document.getElementById("audio2");
+                sound.play();
+            }
+        </script>
+
+        <!--Title-->
+        <div class="object title">
+            <img class="face title1" src="asset/images/title1.png" />
+            <img class="face title2" src="asset/images/title2.png" />
+            <img class="face title3" src="asset/images/title3.png" />
+            <img class="face title4" src="asset/images/title4.png" />
+            <img class="face title5" src="asset/images/rolledbook2.png" />
+        </div>
+
+        
+        
+        <!--Money-->
+        <div class="object money">
+            <img class="face money1" src="asset/images/money.png" />
+            <img class="face money2" src="asset/images/money.png" />
+            <img class="face money3" src="asset/images/money.png" />
+        </div>
+
+        <!--Flower-->
+        <div class="object flower">
+            <img class="face flower1" src="asset/images/flower.png" />
+            <img class="face flower2" src="asset/images/flower2.png" />
+            <img class="face flower3" src="asset/images/papercutflower.png" />
+            <img class="face flower4" src="asset/images/papercutflower.png" />
+            <img class="face flower5" src="asset/images/flower.png" />
+        </div>
+
+        <!--Cloud-->
+        <div class="object cloud">
+            <img class="face cloud1" src="asset/images/cloud1.png" />
+
+            <img class="face cloud2" src="asset/images/cloud2.png" />
+            <img class="face cloud3" src="asset/images/cloud3.png" />
+        </div>
+
+
+        <div class="object fanobj">
+            <img class="face fan" src="asset/images/fan.png" />
+        </div>
+
+    </article>
+
+
+    <div>
+        <img id="button" src="asset/images/mute.png" />
+    </div>
+
+    <audio id="player">
+        <source src='asset/audio/cny.mp3' />
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/index.js"></script>
+    <script src="asset/js/firework.js"></script>
+    <script src="asset/js/light.js"></script>
+</body>
+
+</html>
